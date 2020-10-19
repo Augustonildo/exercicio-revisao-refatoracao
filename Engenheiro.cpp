@@ -1,11 +1,6 @@
-#include <string>
-#include "Empregado.hpp"
+#include "Engenheiro.hpp"
 
-class Engenheiro : public Empregado {
-
-  public:
-    std::string nome;  
-	int projetos;
-	
-};
-
+void Engenheiro::exibirDadosDoMes(double horasTrabalhadas){
+  Empregado::exibirDadosDoMes(horasTrabalhadas);
+  std::cout << "Projetos: " << this->projetos << std::endl;
+}
